@@ -1,0 +1,17 @@
+import time
+from selenium import webdriver
+a=webdriver.ChromeOptions()
+a.add_experimental_option('detach',True)
+b=webdriver.Chrome(a)
+#b.get('https://demowebshop.tricentis.com/')
+#b.find_element('class name', 'ico-register').click()
+#time.sleep(2)
+#b.find_element('class name', 'ico-login').click()
+#time.sleep(2)
+#b.find_element('class name', 'ico-cart').click()
+#time.sleep(2)
+#b.find_element('class name',"ico-wishlist").click()
+b.get("https://www.facebook.com/r.php?entry_point=login")
+time.sleep(2)
+b.find_element('class name',"inputtext._58mg._5dba._2ph-").send_keys("deva")
+time.sleep(2)
